@@ -22,11 +22,11 @@ export default function Leaderboard() {
                 leaderBoardData.map((leader, key) => {
                     return (
                         <div key={key} className='flex justify-between p-3 border-2 border-border rounded-xl mt-1'>
-                            <div className='flex gap-2'>
-                                <Image src={leader.image} alt='user' width={45} height={45} className='rounded-full' />
+                            <div className='flex items-start gap-2'>
+                                <Image src={leader.image} alt='user' width={45} height={45} className='rounded-full object-cover' />
                                 <div className='flex flex-col'>
-                                    <p className='text-base font-medium'>{leader.name}</p>
-                                    <p className='text-sm leading-3 text-muted-foreground'>@{leader.username}</p>
+                                    <p className='text-base leading-4 font-medium'>{leader.name}</p>
+                                    <p className='text-sm leading-4 text-muted-foreground'>@{leader.username}</p>
                                 </div>
                             </div>
                             <h2><span className='text-primary font-bold justify-self-end'>{leader.points}</span>

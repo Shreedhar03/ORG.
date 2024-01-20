@@ -4,6 +4,7 @@ import React from 'react'
 import CircleDivider from '../CircleDivider';
 import Link from 'next/link';
 import { Button } from '../ui/button';
+import { useRouter } from 'next/navigation';
 
 export default function Projects() {
   interface Project {
@@ -63,6 +64,7 @@ export default function Projects() {
       projectDesc: 'Developed a fully functional e-commerce platform with secure payment integration, product management, and user-friendly interfaces. The project aimed to provide online businesses with a reliable and feature-rich solution for selling products/services.',
     },
   ];
+
   return (
     <div className='my-8'>
       {
@@ -73,7 +75,7 @@ export default function Projects() {
               <div className='flex items-center gap-3'>
                 <Image src={project.ownerImage} width={40} height={40} className='rounded-full' alt='user' />
                 <div className=''>
-                  <h2 className='text-lg font-medium'>{project.ownerName}</h2>
+                  <Link href={'/home/{{userID}}/profile'} className='text-lg font-medium'>{project.ownerName}</Link>
                   <h3 className='text-primary opacity-60 text-sm font-semibold leading-3 flex gap-2 items-center'>
                     @{project.ownerUserName}<CircleDivider />
                     {project.ownerDept}<CircleDivider />

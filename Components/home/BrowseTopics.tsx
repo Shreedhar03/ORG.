@@ -34,13 +34,13 @@ export default function BrowseTopics() {
 
     return (
         <>
-            <div className="bg-white fixed top-28 rounded-2xl p-5 self-start flex flex-col gap-3 h-[calc(100vh-150px)] overflow-y-scroll">
+            <div className="bg-white top-28 rounded-2xl p-5 self-start flex flex-col gap-3 h-[calc(100vh-150px)] overflow-y-scroll">
                 <h1 className='text-lg font-semibold mb-2'>Browse Topics</h1>
                 {
                     topics.map((t,key)=>{
                         return(
                             <div key={key} className='flex items-center justify-between gap-4 border-2 border-border rounded-xl p-3'>
-                                <h2 className='text-[15px] font-medium w-44 text-ellipsis'>{t.title}</h2>
+                                <h2 className='text-[15px] font-medium w-72 text-ellipsis'>{t.title}</h2>
                                 <Button className='rounded-3xl text-xs h-8'>Follow</Button>
                             </div>
                         )
