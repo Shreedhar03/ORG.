@@ -17,10 +17,10 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <ClerkProvider>
-      <html lang="en">
+    <html lang="en" className='bg-slate-100'>
+        <ClerkProvider>
         <body className={inter.className}>{children}</body>
+        </ClerkProvider>
       </html>
-    </ClerkProvider>
   )
 }
