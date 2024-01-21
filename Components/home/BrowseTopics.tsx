@@ -34,7 +34,7 @@ export default function BrowseTopics() {
 
     return (
         <>
-            <div className="bg-white top-28 rounded-2xl p-5 self-start flex flex-col gap-3 h-[calc(100vh-150px)] overflow-y-scroll">
+            <div className="bg-white top-28 rounded-2xl p-5 self-start hidden xl:flex flex-col gap-3 h-[calc(100vh-150px)] overflow-y-scroll">
                 <h1 className='text-lg font-semibold mb-2'>Browse Topics</h1>
                 {
                     topics.map((t,key)=>{

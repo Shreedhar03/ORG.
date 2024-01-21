@@ -76,10 +76,12 @@ export default function Projects() {
                 <Image src={project.ownerImage} width={40} height={40} className='rounded-full' alt='user' />
                 <div className=''>
                   <Link href={'/home/{{userID}}/profile'} className='text-lg font-medium'>{project.ownerName}</Link>
-                  <h3 className='text-primary opacity-60 text-sm font-semibold leading-3 flex gap-2 items-center'>
-                    @{project.ownerUserName}<CircleDivider />
-                    {project.ownerDept}<CircleDivider />
-                    {project.ownerInstitute}
+                  <h3 className='flex flex-wrap text-primary opacity-65 text-base font-medium leading-5 sm:leading-6 gap-1 sm:gap-2 items-center sm:justify-start'>
+                    <span>@{project.ownerUserName}</span>
+                    <CircleDivider />
+                    <span>{project.ownerDept}</span>
+                    <CircleDivider />
+                    <span>{project.ownerInstitute}</span>
                   </h3>
                 </div>
               </div>
@@ -92,7 +94,7 @@ export default function Projects() {
                 </Link>
               </p>
 
-              <Button className='self-end h-8 rounded-2xl'>Ask to Join</Button>
+              <Button className='self-end h-8 rounded-2xl mt-2'>Ask to Join</Button>
             </div>
           )
         })

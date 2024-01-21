@@ -6,16 +6,16 @@ import Bootcamps from './Bootcamps'
 
 export default function Feed() {
     return (
-        <section className='bg-white rounded-2xl p-5 h-[calc(100vh-150px)] w-full overflow-y-scroll'>
+        <section className='bg-white rounded-2xl pb-5 h-[calc(100vh-150px)] w-full overflow-y-scroll'>
             <Tabs defaultValue="projects" className="w-full">
-                <TabsList>
-                    <TabsTrigger value="projects" className='data-[state=active]:bg-primary data-[state=active]:text-white'>Projects</TabsTrigger>
-                    <TabsTrigger value="bootcamps" className='data-[state=active]:bg-primary data-[state=active]:text-white'>Bootcamps</TabsTrigger>
+                <TabsList className='sticky top-0 bg-white z-30 w-full py-8 px-5 flex justify-start'>
+                    <TabsTrigger value="projects" className='data-[state=active]:border-b-2 data-[state=active]:border-b-primary w-1/2 md:w-auto data-[state=active]:text-primary rounded-none'>Projects</TabsTrigger>
+                    <TabsTrigger value="bootcamps" className='data-[state=active]:border-b-2 data-[state=active]:border-b-primary w-1/2 md:w-auto data-[state=active]:text-primary rounded-none'>Bootcamps</TabsTrigger>
                 </TabsList>
-                <TabsContent value="projects">
+                <TabsContent value="projects" className='px-5 pb-5'>
                     <Projects />
                 </TabsContent>
-                <TabsContent value="bootcamps">
+                <TabsContent value="bootcamps" className='px-5 pb-5'>
                     <Bootcamps />
                 </TabsContent>
             </Tabs>

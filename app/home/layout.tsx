@@ -7,7 +7,7 @@ interface LayoutProps {
 const Layout: React.FC<LayoutProps> = ({ children }) => {
     return (
         <>
-            <main className="px-3 md:px-8 lg:px-16 bg-slate-100">
+            <main className="px-3 md:px-8 2xl:px-16 bg-slate-100">
                 <Navbar />
                 <div className="mt-1">
                     {children}

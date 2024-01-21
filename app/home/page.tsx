@@ -5,10 +5,10 @@ import Leaderboard from "@/Components/home/Leaderboard";
 
 const Home = () => {
     return (
-        <section className="flex flex-wrap md:flex-nowrap gap-3 my-6">
+        <section className="flex flex-wrap justify-stretch md:flex-nowrap gap-3 my-6">
             <BrowseTopics />
             <Feed />
-            <div className="flex flex-col justify-between gap-3 h-[calc(100vh-150px)]">
+            <div className="w-full sm:w-auto flex flex-col justify-self-stretch justify-between gap-3 h-[calc(100vh-150px)]">
                 <Events />
                 <Leaderboard />
             </div>
