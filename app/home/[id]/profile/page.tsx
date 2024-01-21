@@ -75,7 +75,7 @@ export default function page() {
         </div>
         <div className='bg-white p-6 rounded-2xl col-span-4 lg:col-span-2 xl:col-span-1'>
           <h2 className='font-bold'>Bio</h2>
-          <p className='leading-5 mt-1'>In my journey as a computer engineering student, I've been exploring the fascinating intersection of data science, UI and UX designing, and machine learning.</p>
+          <p className='leading-5 mt-1'>In my journey as a computer engineering student, I&apos;ve been exploring the fascinating intersection of data science, UI and UX designing, and machine learning.</p>
         </div>
         <div className='bg-white p-6 rounded-2xl col-span-4 sm:col-span-2 xl:col-span-1'>
           <h2 className='font-bold'>Academics</h2>
